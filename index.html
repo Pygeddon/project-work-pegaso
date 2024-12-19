@@ -9,11 +9,96 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body style="background-color: teal;"></body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">EventSite</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <header>
       <h1>Project Work UniPegaso</h1>
     </header>
     <main>
+      <div id="event-list" class="container mt-5">
+       <!--  <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="assets/event1.jpeg" class="card-img-top" alt="Event 1">
+              <div class="card-body">
+                <h5 class="card-title">Music Event 1</h5>
+                <p class="card-text">Description of Music Event 1.</p>
+                <label for="date1">Select Date:</label>
+                <select id="date1" class="form-control">
+                  <option>2025-01-01</option>
+                  <option>2025-01-02</option>
+                  <option>2025-01-03</option>
+                  <option>2025-01-04</option>
+                  <option>2025-01-05</option>
+                </select>
+                <button class="btn btn-primary mt-3">Buy Ticket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-md-4">
+            <div class="card">
+              <img src="assets/event2.jpeg" class="card-img-top" alt="Event 2">
+              <div class="card-body">
+                <h5 class="card-title">Music Event 2</h5>
+                <p class="card-text">Description of Music Event 2.</p>
+                <label for="date2">Select Date:</label>
+                <select id="date2" class="form-control">
+                  <option>2025-02-01</option>
+                  <option>2025-02-02</option>
+                  <option>2025-02-03</option>
+                  <option>2025-02-04</option>
+                  <option>2025-02-05</option>
+                </select>
+                <button class="btn btn-primary mt-3">Buy Ticket</button>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="assets/event3.jpeg" class="card-img-top" alt="Event 3">
+              <div class="card-body">
+                <h5 class="card-title">Music Event 3</h5>
+                <p class="card-text">Description of Music Event 3.</p>
+                <label for="date3">Select Date:</label>
+                <select id="date3" class="form-control">
+                  <option>2025-03-01</option>
+                  <option>2025-03-02</option>
+                  <option>2025-03-03</option>
+                  <option>2025-03-04</option>
+                  <option>2025-03-05</option>
+                </select>
+                <button class="btn btn-primary mt-3">Buy Ticket</button>
+              </div>
+            </div>
+          </div>
+          
+        </div> -->
+      </div>
       <p>This is a sample HTML5 boilerplate template.</p>
     <form id="eventBookingForm"></form>
         <label for="name">Name:</label>
@@ -29,6 +114,9 @@
         <input type="date" id="date" name="date" required /><br />
 
         <button id="book-button" type="submit">Book Now</button>
+        <div id="pdf-download" style="display:none">
+          <button id="download-button">Download Ticket</button>
+        </div>
     </form>
     </main>
     <footer>
